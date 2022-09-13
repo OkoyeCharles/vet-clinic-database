@@ -10,4 +10,5 @@ CREATE TABLE animals(
   neutered BOOLEAN,    
   weight_kg DEC,
   species TEXT,
+  PRIMARY KEY(id)
 );

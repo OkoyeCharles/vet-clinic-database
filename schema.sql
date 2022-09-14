@@ -12,3 +12,16 @@ CREATE TABLE animals(
   species TEXT,
   PRIMARY KEY(id)
 );
+
+CREATE TABLE owners(
+ id INT GENERATED ALWAYS AS IDENTITY,
+ full_name TEXT,
+ age INT,
+ PRIMARY KEY(id)
+);
+
+CREATE TABLE species(
+ id GENERATED ALWAYS AS IDENTITY,
+ name TEXT,
+ PRIMARY KEY(id)
+);

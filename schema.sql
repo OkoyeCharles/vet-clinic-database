@@ -9,12 +9,14 @@ CREATE TABLE animals(
   escape_attemps INT,
   neutered BOOLEAN,    
   weight_kg DEC,
-  species TEXT,
   PRIMARY KEY(id)
 );
 
 ALTER TABLE animals 
 ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY;
+
+ALTER TABLE animals
+DROP COLUMN species;
 
 CREATE TABLE owners(
  id INT GENERATED ALWAYS AS IDENTITY,

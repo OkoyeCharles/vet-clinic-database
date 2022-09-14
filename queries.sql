@@ -81,3 +81,10 @@ GROUP BY species;
 SELECT species, AVG(escape_attempts) FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+
+-- QUERIES (3)
+-- Modify your inserted animals so it includes the species_id value
+UPDATE animals SET species_id = 2
+WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1
+WHERE species_id IS NULL;

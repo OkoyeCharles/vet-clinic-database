@@ -55,5 +55,6 @@ CREATE TABLE specializations(
 
 CREATE TABLE visits(
  vet TEXT,
- animal TEXT
+ animal TEXT,
+ date_visited DATE
 );

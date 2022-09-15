@@ -62,3 +62,27 @@ VALUES
   ('Stephanie Mendez', 'Digimon'),
   ('Stephanie Mendez', 'Pokemon'),
   ('Jack Harkness', 'Digimon');
+
+INSERT INTO VISITS
+VALUES
+  ('William Tatcher', 'Agumon', '2020-05-24'),
+  ('Stephanie Mendez', 'Agumon', '2020-07-22'),
+  ('Jack Harkness', 'Gabumon', '2021-02-02'),
+  ('Maisy Smith', 'Pikachu', '2020-01-05'),
+  ('Maisy Smith', 'Pikachu', '2020-03-08'),
+  ('Maisy Smith', 'Pikachu', '2020-05-14'),
+  ('Stephanie Mendez', 'Devimon', '2021-05-04'),
+  ('Jack Harkness', 'Charmander', '2021-02-24'),
+  ('Maisy Smith', 'Plantmon', '2019-12-21'),
+  ('William Tatcher', 'Plantmon', '2020-08-10'),
+  ('Maisy Smith', 'Plantmon', '2021-04-07'),
+  ('Stephanie Mendez', 'Squirtle', '2019-09-29'),
+  ('Jack Harkness', 'Angemon', '2020-10-03'),
+  ('Jack Harkness', 'Angemon', '2020-11-04'),
+  ('Maisy Smith', 'Boarmon', '2019-01-24'),
+  ('Maisy Smith', 'Boarmon', '2019-05-15'),
+  ('Maisy Smith', 'Boarmon', '2020-02-27'),
+  ('Maisy Smith', 'Boarmon', '2020-08-03'),
+  ('Stephanie Mendez', 'Blossom', '2020-05-24'),
+  ('William Tatcher', 'Blossom', '2021-01-11');
+  

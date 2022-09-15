@@ -153,12 +153,7 @@ JOIN vets ON vets.name = visits.vet
 ORDER BY date_visited DESC LIMIT 1;
 
 -- How many visits were with a vet that did not specialize in that animal's species?
-SELECT visits.*, specializations.specie, COUNT(*) FROM visits
-LEFT JOIN specializations on specializations.vet = visits.vet
-GROUP BY visits.vet;
-
--- How many visits were with a vet that did not specialize in that animal's species?
-SELECT COUNT(*) as vets_count FROM visits
+SELECT COUNT(*) as visit_count FROM visits
 WHERE visits.vet = (
   SELECT vets.name as VETS_NAME FROM vets -- vets without specializations
   LEFT JOIN specializations ON specializations.vet = vets.name
@@ -169,7 +164,7 @@ WHERE visits.vet = (
 SELECT animals.name as highest_visiting_animal, species.name as specie FROM animals
 JOIN species ON species.id = animals.species_id
 WHERE animals.name = (
-  SELECT animal as highest_visiting_animal FROM visits
+  SELECT animal as highest_visiting_animal FROM visits -- Maisy's highest visiting animal
   WHERE vet = 'Maisy Smith'
   GROUP BY animal
   ORDER BY COUNT(*) DESC LIMIT 1

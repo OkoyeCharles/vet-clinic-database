@@ -47,3 +47,13 @@ CREATE TABLE vets(
  age INT,
  date_of_graduation DATE
 );
+
+CREATE TABLE specializations(
+ vet TEXT,
+ specie TEXT
+);
+
+CREATE TABLE visits(
+ vet TEXT,
+ animal TEXT
+);

@@ -40,3 +40,10 @@ CREATE TABLE species(
  name TEXT,
  PRIMARY KEY(id)
 );
+
+CREATE TABLE vets(
+ id INT GENERATED ALWAYS AS IDENTIY,
+ name TEXT,
+ age INT,
+ date_of_graduation DATE
+);

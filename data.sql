@@ -55,3 +55,10 @@ VALUES
   ('Maisy Smith', 26, '2019-01-27'),
   ('Stephanie Mendez', 64, '1981-05-04'),
   ('Jack Harkness', 38, '2008-06-08');
+
+INSERT INTO specializations
+VALUES
+  ('William Tatcher', 'Pokemon'),
+  ('Stephanie Mendez', 'Digimon'),
+  ('Stephanie Mendez', 'Pokemon'),
+  ('Jack Harkness', 'Digimon');

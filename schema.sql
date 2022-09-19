@@ -62,3 +62,8 @@ CREATE TABLE visits(
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 CREATE INDEX visits_animal_btree ON visits(animal ASC);
+
+-- Create index btree for owners email column
+
+CREATE INDEX owner_email_btree ON owners(email ASC);
+

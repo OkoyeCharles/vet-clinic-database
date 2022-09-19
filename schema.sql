@@ -58,3 +58,16 @@ CREATE TABLE visits(
  animal TEXT,
  date_visited DATE
 );
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX visits_animal_btree ON visits(animal ASC);
+
+-- Create index btree for visits vet-id column
+
+CREATE INDEX visits_vet_btree ON visits(vet ASC);
+
+-- Create index btree for owners email column
+
+CREATE INDEX owner_email_btree ON owners(email ASC);
+

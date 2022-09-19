@@ -58,3 +58,5 @@ CREATE TABLE visits(
  animal TEXT,
  date_visited DATE
 );
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);

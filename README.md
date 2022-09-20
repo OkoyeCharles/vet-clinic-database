@@ -4,6 +4,10 @@
 
 In this project I created a database for a vetenarian's clinic, after which I created a table to store data for each animal.
 
+## Database Schema Diagram
+
+![vet-clinic-schema](./images/vet-clinic-schema.png)
+
 ## Authors
 
 👤 **Okoye Charles**

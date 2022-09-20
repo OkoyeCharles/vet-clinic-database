@@ -23,3 +23,9 @@ CREATE TABLE treatments (
   PRIMARY KEY(id)
 );
 
+CREATE TABLE medical_histories_treatments (
+  medical_history_id  INT,
+  treatment_id INT,
+  FOREIGN KEY (medical_history_id) REFERENCES medical_history(id),
+  FOREIGN KEY (treatment_id) REFERENCES treatment(id)
+)

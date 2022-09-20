@@ -15,3 +15,11 @@ CREATE TABLE patients (
 ALTER TABLE medical_histories 
   ADD CONSTRAINT fk_patientsmedical_histories
     FOREIGN KEY (patient_id) REFERENCES patients(id);
+
+CREATE TABLE treatments (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  type  VARCHAR,
+  name VARCHAR,
+  PRIMARY KEY(id)
+);
+

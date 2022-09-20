@@ -11,3 +11,7 @@ CREATE TABLE patients (
  date_of_birth DATE,
  PRIMARY KEY(id)
 );
+
+ALTER TABLE medical_histories 
+  ADD CONSTRAINT fk_patientsmedical_histories
+    FOREIGN KEY (patient_id) REFERENCES patients(id);
